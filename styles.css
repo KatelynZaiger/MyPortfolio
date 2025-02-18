@@ -192,6 +192,31 @@ footer {
     width: 100%;
 }
 
+/* Photo Collage Section */
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 35px; /* Spacing between photos */
+    padding: 10px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 2rem;
+
+}
+
+.photo-collage img {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.photo-collage img:hover {
+    transform: scale(1.55);
+}
+
 /* Photo Collage Section for Landscape (3:2) Photos */
 .photo-collage-2 {
     display: grid;
