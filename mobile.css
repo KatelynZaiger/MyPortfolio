@@ -7,7 +7,7 @@
 
 /* Body styling */
 body {
-    font-family: Garamond;
+    font-family: Garamond, serif;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -28,12 +28,13 @@ header {
     list-style-type: none;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
 
 .menu li {
-    margin: 0 1rem;
+    margin: 0.5rem;
 }
 
 .menu a {
@@ -46,68 +47,28 @@ header {
 
 .menu a:hover {
     background-color: #003366;
-    color: #FFC107;
+    color: white;
 }
 
-.menu a.active {
-    background-color: #FFC107;
-    color: #1E3A8A;
-}
-
-/* Main content styling */
-main {
-    padding: 2rem;
-    text-align: center;
-    flex: 1;
-}
-
-/* Update text color for sections */
-p {
-    font-size: 17px;
-}
-h1, h2 {
-    color: #FFC107;
-    font-size: 32px;
-}
-h4 {
-    font-size: 17px;
-    font-weight: normal;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-/* Responsive Design */
+/* Responsive navigation */
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
         align-items: center;
     }
+
     .menu li {
-        margin-bottom: 0.5rem;
+        margin-bottom: 10px;
     }
-    .text-photo-container {
-        flex-direction: column;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .text-photo-container img, .text-photo-container p {
-        width: 100%;
-        text-align: center;
-    }
-    h4 {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .photo-collage, .photo-collage-2 {
-        padding-left: 2rem;
-        padding-right: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .video-gallery {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-    .banner-image {
-        width: 100%;
-    }
+}
+
+/* Responsive sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
 }
