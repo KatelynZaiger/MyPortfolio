@@ -1,3 +1,5 @@
+/* Mobile-specific styling */
+
 /* Basic elements */
 * {
     margin: 0;
@@ -27,13 +29,15 @@ header {
 .menu {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .menu li {
-    margin: 0 1rem;
+    margin: 1rem 0;
 }
 
 .menu a {
@@ -63,51 +67,155 @@ main {
 
 /* Update text color for sections */
 p {
-    font-size: 17px;
+    font-size: 14px;
 }
 h1, h2 {
     color: #FFC107;
-    font-size: 32px;
+    font-size: 24px;
 }
 h4 {
-    font-size: 17px;
+    font-size: 14px;
     font-weight: normal;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-    }
-    .menu li {
-        margin-bottom: 0.5rem;
-    }
-    .text-photo-container {
-        flex-direction: column;
-        padding-left: .25rem;
-        padding-right: .25rem;
-    }
-    .text-photo-container img, .text-photo-container p {
-        width: 100%;
-        text-align: center;
-    }
-    h4 {
-        padding-left: .25rem;
-        padding-right: .25rem;
-    }
-    .photo-collage, .photo-collage-2 {
-        padding-left: .25rem;
-        padding-right: .25rem;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .video-gallery {
-        padding-left: .25rem;
-        padding-right: .25rem;
-    }
-    .banner-image {
-        width: 100%;
-    }
+/* About section styling */
+#about {
+    color: #FFFFFF; 
+}
+
+/* Text and photo container */
+.text-photo-container.left.with-header .text-content {
+    color: #FFFFFF; 
+}
+
+.text-photo-container p {
+    color: #FFFFFF; 
+}
+
+.text-photo-container.left.with-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-photo-container.left.with-header .text-content {
+    width: 100%;
+    text-align: center; 
+}
+
+.text-photo-container.left.with-header h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.text-photo-container.left.with-header p {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+
+.text-photo-container.left.with-header img {
+    width: 90%;
+    height: auto;
+    border-radius: 16px;
+}
+
+.text-photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.text-photo-container.left {
+    flex-direction: column;
+}
+
+.text-photo-container.right {
+    flex-direction: column;
+}
+
+.text-photo-container p {
+    width: 100%;
+    text-align: center;
+}
+
+.text-photo-container img {
+    width: 90%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Video gallery styling */
+.video-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.video-item {
+    background-color: #0c1635;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-item h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0c1635;
+    color: #FFC107;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Photo Collage Section */
+.photo-collage-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    gap: 20px; /* Adjusted spacing */
+    padding: 1rem;
+}
+
+.photo-collage-2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Additional adjustments for photo collages */
+.photo-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    gap: 20px;
+    padding: 1rem;
+}
+
+.photo-collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
