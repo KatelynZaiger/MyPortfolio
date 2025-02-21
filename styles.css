@@ -206,16 +206,15 @@ footer {
     width: 100%;
 }
 
-/* Photo Collage Section */
+/* Photo Collage Section for Portrait (2:3) Photos */
 .photo-collage {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
     gap: 35px; /* Spacing between photos */
     padding: 10px;
     padding-left: 10rem;
     padding-right: 10rem;
     padding-bottom: 2rem;
-
 }
 
 .photo-collage img {
@@ -234,7 +233,7 @@ footer {
 /* Photo Collage Section for Landscape (3:2) Photos */
 .photo-collage-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); /* Adjusted for 3:2 aspect */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 45px; /* Spacing between photos */
     padding: 10px;
     padding-left: 10rem;
@@ -254,6 +253,7 @@ footer {
 .photo-collage-2 img:hover {
     transform: scale(1.75);
 }
+
 
 .banner-container {
     overflow: visible;

@@ -195,7 +195,7 @@ footer {
 /* Photo Collage Section */
 .photo-collage-2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    grid-template-columns: repeat(3, 1fr); /* Two columns on mobile */
     gap: 20px; /* Adjusted spacing */
     padding: 1rem;
 }
@@ -209,7 +209,7 @@ footer {
 /* Additional adjustments for photo collages */
 .photo-collage {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+    grid-template-columns: repeat(4, 1fr); /* Two columns on mobile */
     gap: 20px;
     padding: 1rem;
 }
