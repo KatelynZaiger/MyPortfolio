@@ -14,13 +14,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #1E3A8A;
+    background-color: #0c1635;
     color: #FFFFFF;
 }
 
 /* Header styling */
 header {
-    background-color: #0c1635;
+    background-color: #1E3A8A;
     padding: 1rem;
     z-index: 1000;
 }
@@ -55,7 +55,7 @@ header {
 
 .menu a.active {
     background-color: #FFC107;
-    color: #1E3A8A;
+    color: #0c1635;
 }
 
 /* Main content styling */
@@ -163,7 +163,7 @@ h4 {
 }
 
 .video-item {
-    background-color: #0c1635;
+    background-color: #1E3A8A;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -185,7 +185,7 @@ h4 {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #0c1635;
+    background-color: #1E3A8A;
     color: #FFC107;
     bottom: 0;
     left: 0;
@@ -226,3 +226,7 @@ footer {
     display: block;
     border-radius: 16px;
 }
+
+a {
+    color: white;
+  }
