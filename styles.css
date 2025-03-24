@@ -147,7 +147,8 @@ a {
 }
 
 .text-photo-container.right {
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
+    white-space: pre-wrap
 }
 
 .text-photo-container p {
